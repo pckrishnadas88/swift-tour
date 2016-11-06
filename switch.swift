@@ -1,3 +1,4 @@
+import Foundation
 let vegetable = "red pepper"
 switch vegetable {
 	case "celery":
