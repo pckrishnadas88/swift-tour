@@ -24,3 +24,14 @@ var b = SimpleStructure()
 b.adjust()
 let bDescription = b.simpleDescription
 print(bDescription)
+
+//Extensions
+extension Int: ExampleProtocol {
+    var simpleDescription: String {
+        return "The number \(self)"
+    }
+    mutating func adjust() {
+        self += 42
+    }
+}
+print(7.simpleDescription)
